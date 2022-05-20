@@ -1,0 +1,128 @@
+/* pages/speciesguide/speciesguide.wxss */
+.action{
+  background-color: white;
+  width: 100%;
+}
+.uppart{
+    position: relative;
+    height: 340rpx;
+}
+
+.back{
+    position: absolute;
+    height: 340rpx;
+  }
+.tab{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    color: burlywood;
+    padding: 10rpx;
+    font-weight:900;
+}
+.tab_item{
+    display: flex;
+    flex:2;
+    height: 50rpx;
+    justify-content:center;
+    align-items: center;
+    text-shadow: 1rpx 1rpx 1rpx #fff;
+}
+.activate{
+    border-bottom: 10rpx solid burlywood;
+    box-shadow: 0px 0.5px 0px 0px #fff;
+}
+
+
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1%; 
+  position: absolute;
+  z-index: 1;
+  margin-top: 180px;
+}
+
+.searchinfo{
+  border-radius: 13rpx;
+  color: burlywood;
+  background-color: white;
+  height: 65rpx;
+  padding-left: 20rpx;
+  width: 500rpx;
+}
+
+.botton{
+  padding-left: 10rpx;
+}
+
+.searchbutton{
+  background-color: #D1894E;
+  color: white;
+  font-size: 26rpx;
+  height: 65rpx;
+}
+
+
+.downpart{
+    padding-top: 10rpx;
+    height: 100%;
+}
+
+.box{
+  background-color: white;
+  width: 700rpx;
+  padding-top: 20rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 13rpx;
+  box-shadow: 0 10rpx 10rpx rgb(209, 209, 209);
+  padding-bottom: 20rpx;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.speciespicture{
+  width:32%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius:10rpx;
+  margin-top:15rpx;
+}
+
+.speciespicture text{
+  color: #999999;
+  font-size: 28rpx;
+}
+
+.title{
+  margin: 0 auto;
+  font-size: 40rpx;
+  color: #D1894E;
+}
+
+.image{
+  height: 150rpx; 
+  width: 150rpx; 
+  border-radius: 13rpx;
+  overflow: hidden;
+}
+
+.map{
+    width: 100%;
+    height: 600rpx;
+  }

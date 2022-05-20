@@ -1,0 +1,19 @@
+<!--component/newsList/newsList.wxml-->
+<view class='container'>
+    <view class="first_tab" wx:for="{{newsList}}" wx:key="id">
+     <navigator class="news_item" url="/template/pages/webview/webview?url={{item.url}}">
+        <view class="describe">
+            <view class="title">
+            {{item.title}}
+            </view>
+            <view class="source">
+                {{item.source}}
+            </view>
+        </view>
+        <view class="cover">
+            <image class="cover_img" model="widthFix" src="{{item.imagecover}}"></image>
+        </view>
+    </navigator>
+
+    </view>
+</view>

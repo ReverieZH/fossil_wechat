@@ -1,0 +1,27 @@
+/* component/search/searchInput.wxss */
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%; 
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.searchinfo{
+  border-radius: 13rpx;
+  color: burlywood;
+  background-color: white;
+  height: 65rpx;
+  padding-left: 20rpx;
+  width: 500rpx;
+}
+.botton{
+  padding-left: 10rpx;
+}
+.searchbutton{
+  background-color: #D1894E;
+  color: white;
+  font-size: 26rpx;
+  height: 65rpx;
+}

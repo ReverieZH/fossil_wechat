@@ -1,0 +1,23 @@
+<view wx:if="{{authorization == false}}">
+  <view >
+    <image class="back" src="https://666f-fossil-9g55uvhg105f7e70-1311524201.tcb.qcloud.la/background2.jpg?sign=9c603e2bc8ae01fcf120d7b97c5c5abc&t=1651830750"></image>
+
+    <button class="authorization" open-type="getUserInfo" bindgetuserinfo="getUserInfo"  style="position: relative; top: 20rpx"> 需要您的授权方能开启捕石者 </button>
+  </view>
+</view>
+<view wx:else>
+    <view class="container">
+    <image class="backgroud" src="https://666f-fossil-9g55uvhg105f7e70-1311524201.tcb.qcloud.la/backphoto.jpg?sign=32e72f0bce456d494c5c41559b0f2291&t=1651830770"></image>
+    <text class="text">点击拍摄发现新生命</text>
+    <image class="photo-pic" src="https://666f-fossil-9g55uvhg105f7e70-1311524201.tcb.qcloud.la/photograph.png?sign=786cf66fde620968f1cfc676bc36f74a&t=1651830785"
+      bindtap="takePhoto"></image>
+    <view class="card" wx:for = "{{news}}" wx:key="index" data-infor="{{item}}">
+      <view class="head">
+        <text class="title">{{item.title}}</text>
+        <text class="time">{{item.time.time}}</text>
+      </view>
+      <text class="content">{{item.content}}</text>
+    </view>
+  </view>
+</view>
+

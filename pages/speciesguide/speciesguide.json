@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "searchInput":"/component/searchInput/searchInput",
+    "SpeciesGuide":"/component/SpeciesGuide/SpeciesGuide",
+    "newsList":"/component/newsList/newsList",
+    "fossilMap":"/component/fossilMap/fossilMap",
+    "museum":"/component/museum/museum"
+  },
+  "navigationBarTitleText": "石在有趣"
+}

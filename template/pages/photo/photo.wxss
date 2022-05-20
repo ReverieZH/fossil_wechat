@@ -1,0 +1,36 @@
+/* pages/photo/photo.wxss */
+.camera{
+    width: 100vw;
+    height: 100vh;
+  }
+  .record{
+    position: fixed;
+    bottom: 100rpx;
+    left: 0;
+    right: 0;
+    width: 150rpx;
+    height: 150rpx;
+    margin: auto;
+    border-radius: 50%;
+    border: 15rpx solid rgb(255, 255, 255);
+  }
+  
+  .photoes {
+    position: fixed;
+    bottom: 150rpx;
+    left: 500rpx;
+    right: 0rpx;
+    width: 70rpx;
+    height: 70rpx;
+    margin: auto;
+  }
+  
+  .back{
+    position: fixed;
+    top: 100rpx;
+    left: 50rpx;
+    width: 70rpx;
+    height: 70rpx;
+    margin: auto;
+  }
+  

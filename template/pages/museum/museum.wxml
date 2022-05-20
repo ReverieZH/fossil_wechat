@@ -1,0 +1,10 @@
+<!--template/pages/museum/museum.wxml-->
+<text>template/pages/museum/museum.wxml</text>
+<view class="speciespicture"  wx:for="{{fossil}}" wx:key="id" >
+      <navigator url="/template/pages/speciesdetail/speciesdetail?fossilId={{item.id}}">
+        <view>
+          <image class="image" src="{{item.picture?item.picture:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" ></image>
+        </view>
+      </navigator>
+      <text class="text">{{item.name}}</text>
+</view>

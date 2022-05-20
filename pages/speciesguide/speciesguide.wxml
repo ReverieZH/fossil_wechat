@@ -1,0 +1,43 @@
+<!--pages/speciesguide/speciesguide.wxml-->
+<view class="action">
+  <view class="uppart">
+    <image class="back" model="widthFix" src="https://666f-fossil-9g55uvhg105f7e70-1311524201.tcb.qcloud.la/background_crop.jpg?sign=4699dff3ecf089bd96e82bd7990258c1&t=1651830543"></image>
+    <view class="tab">
+        <view wx:for="{{tabList}}"
+        wx:key="id"
+        class="tab_item {{item.isActivate?'activate':''}}"
+        bindtap="handleItemTap"
+        data-index="{{index}}"
+        data-url="{{item.url}}">
+        {{item.name}}</view>
+    </view>
+  </view>
+    <searchInput></searchInput>
+  <view class="downpart">
+    <!-- <view class="box">
+      <view class="title">物种分类</view>
+      <view class="location">
+        <view class="speciespicture"  wx:for="{{guideList}}" wx:key="id" >
+          <navigator url="/pages/speciesdetail/speciesdetail?fossilId={{item.id}}">
+            <view>
+              <image class="image" src="{{item.speciescover}}" ></image>
+            </view>
+          </navigator>
+          <text>{{item.speciesname}}</text>
+        </view>
+      </view>
+    </view> -->
+    <view wx:if="{{index==0}}">
+        <SpeciesGuide recieve_guideList="{{guideList}}"></SpeciesGuide>
+    </view>
+    <view wx:if="{{index==1}}">  
+        <newsList></newsList>
+    </view>
+    <view wx:if="{{index==2}}">
+        <fossilMap class="map"></fossilMap>
+    </view>
+    <view wx:if="{{index==3}}">
+        <museum ></museum>
+    </view>
+  </view>
+</view>

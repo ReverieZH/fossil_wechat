@@ -1,0 +1,36 @@
+var json=[
+  {
+    index:0,
+    replyName:'总调度18729258002',
+    userImg:'https://thirdwx.qlogo.cn/mmhead/cYNYds6gbO1AJFXSYXCEsa1hYqHGA9n4Qvzs3WavsCU/132',
+    userID:'7',
+    userName:'rzh',
+    content:'这是三叶虫',
+    time:'2022-05-08',
+    state:true
+  },
+  {
+    index:1,
+    replyName:'总调度18729258002',
+    userImg:'https://thirdwx.qlogo.cn/mmhead/cYNYds6gbO1AJFXSYXCEsa1hYqHGA9n4Qvzs3WavsCU/132',
+    userID:'8',
+    userName:'Reverie',
+    content:'这是三叶虫',
+    time:'2022-05-08',
+    state:true
+  },
+  {
+    index:2,
+    replyName:'Reverie',
+    userImg:'https://thirdwx.qlogo.cn/mmhead/cYNYds6gbO1AJFXSYXCEsa1hYqHGA9n4Qvzs3WavsCU/132',
+    userID:'9',
+    userName:'smile0907',
+    content:'说的对!这是三叶虫',
+    time:'2022-05-08',
+    state:true
+  },
+]
+
+module.exports={
+  wantReplay:json
+}

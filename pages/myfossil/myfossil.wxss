@@ -1,0 +1,198 @@
+/* pages/myfossil/myfossil.wxss */.container{
+    padding: 0rpx;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card{
+    height: 80%;
+    margin-top: 30rpx;
+    padding: 30rpx;
+    border: 35rpx solid #99CC99;
+    border-radius: 25rpx;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10rpx 10rpx rgb(209, 209, 209);
+
+}
+
+.card-img{
+    height: 350rpx;
+    border-radius: 25rpx;
+    overflow: hidden;
+}
+
+
+.boxone{
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .name{
+    background-color: #D1894E;
+    color: white;
+    padding: 10rpx;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    border-radius: 10rpx;
+    margin-right: 50rpx;
+  }
+  
+  .describ{
+    padding-left: 10rpx;
+  }
+
+  .lebals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200rpx;
+  }
+
+  .box2{
+      margin-top: 30rpx;
+  }
+
+  .detail{
+      font-size: 30rpx;
+      white-space: normal;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+  }
+
+  
+  .btn-edit{
+      margin-top: 50rpx;
+      background-color: #D1894E;
+      color: white;
+      font-size: 26rpx;
+      width: 60rpx;
+      padding: 10rpx;
+      padding-left: 20rpx;
+      padding-right: 20rpx;
+      border-radius: 13rpx;
+      float: right; 
+  }
+
+  .btn-restruc{
+    margin-top: 30rpx;
+    background-color: #D1894E;
+    color: white;
+    font-size: 30rpx;
+  }
+
+  .foot{
+      margin-top: 30rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10rpx;
+  }
+
+  .btn-pre{
+    background-color: #D1894E;
+    color: white;
+    
+  }
+
+  .btn-del{
+    background-color: rgb(255, 168, 97);
+    color: white;
+  }
+
+  .scroll-view_H {
+    padding-left: 60rpx;
+    width: 100%;
+    white-space: nowrap;
+    
+  }
+
+  .outbox {
+    display: inline-block;
+    width: 100%;
+   }
+
+   .mainFrame {
+    margin-top: 0rpx;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .container {
+    height: 1200rpx;
+    padding-top: 0px;
+    background: white;
+    overflow: hidden;
+  }
+
+  .vol-swiper-item {
+    box-sizing: border-box;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+  }
+
+  .recesive{
+    padding-left: 15rpx;
+  }
+  .sendrecesive{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: white;
+  }
+
+  .button{
+    background-color: #D1894E;
+    color: white;
+    font-size: 26rpx;
+    height: 65rpx;
+  }
+  
+  .input{
+    border: 3rpx solid rgb(208, 208, 208);
+    padding: 10rpx;
+    border-radius: 15rpx;
+    background: white;
+  }
+
+.box9{
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.deletbox{
+  position: absolute;
+  margin-top: 150rpx;
+}
+
+
+.deletebox2{
+  height: 70rpx;
+  border-top-right-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  background-color: #D1894E;
+}
+
+.delete{
+  padding: 10rpx;
+  padding-left: 50rpx;
+}
+
+.deleteimage{
+
+  width: 50rpx;
+  height: 50rpx;
+}
+
+  

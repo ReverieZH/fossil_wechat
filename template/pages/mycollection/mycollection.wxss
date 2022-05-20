@@ -1,0 +1,108 @@
+/**text.wxss**/
+.textmargin {
+  float: left;
+}
+
+.news-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  margin: 5rpx;
+  border-radius: 10%;
+  float: left;
+}
+
+.chong{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.image{
+  height: 400rpx;
+  width: 630rpx;
+  border-radius: 13rpx;
+  overflow: hidden;
+}
+
+#wordscard text {
+  font-size: .8em;
+}
+
+.rowalign {
+    flex-direction: row;
+    float: left;
+}
+.rowalign text {
+  padding-left: 10rpx;
+}
+
+.card, #wordscard {
+    background: #fff;
+    margin: 20rpx 14px;
+    padding: 20px 32rpx;
+    border-radius: 2%;
+}
+
+.card_text{
+  height: 400rpx;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 0 10rpx 10rpx rgb(209, 209, 209);
+}
+.short-card {
+    height: 650rpx;
+    
+}
+
+.card button {
+    width: 400rpx;
+    margin-top: 30px;
+    margin-bottom: 25rpx;
+    
+}
+
+#wordscard {
+    height: 130px;
+}
+
+page, view {
+    font-family: arial,'pingfang sc',stheiti,"microsoft yahei",sans-serif
+}
+page {
+    background: white;
+}
+
+.btn-area image{
+  height: 350rpx;
+  border-radius: 5%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 20rpx;
+    padding-top: 20rpx;
+}
+
+.tag {  
+    font-weight: 200;
+    font-size: .8em;
+    padding-bottom: 30rpx;
+    padding-top: 30rpx;
+    color: #006621;
+}
+
+.para {
+    font-size: .9em;
+    padding-bottom: 30rpx;
+    padding-top: 30rpx;
+}
+.tlink {
+    font-size: .7em;
+    color: #0e61af;
+    padding-top: 10rpx;
+    width: 100%;
+}
+

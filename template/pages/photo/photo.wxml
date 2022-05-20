@@ -1,0 +1,6 @@
+<camera wx:if="{{authCamera}}" binderror="handleCameraError" device-position="{{devicePosition}}" flash="off" class="camera" frame-size="large">
+</camera>
+<image class='record' src="/template/static/takephoto.png" bindtap='record'></image>
+<image class='back' src="/template/static/back.png" bindtap='back'></image>
+<image class="photoes" src="/template/static/photoes.png" bindtap="uploadImage"></image>
+

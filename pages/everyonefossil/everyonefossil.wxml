@@ -1,0 +1,62 @@
+<!--pages/my/my.wxml-->
+<view class="uppart">
+    <view class="my_publish">
+         <navigator url="/template/pages/mypublish/mypublish">
+        <image src="/static/user.png" mode="widthFix"></image>
+        </navigator>
+    </view>
+    <view class="describe">
+        <view class="up_title">
+            发现世界 鉴你所见
+        </view>
+        <view class="little_title">
+            <image mode="widthFix" src="/static/time.png"></image>
+            <text>24小时在线</text>
+            <image mode="widthFix" src="/static/safe.png"></image>
+            <text>专业便捷</text>
+        </view>
+    </view>
+    <view class="button_view">
+        <button bindtap="handleIdentify">专家鉴别</button>
+    </view>
+    <view class="user">
+        <view class="user_text">120位在线鉴别师</view>
+        <view class='index'>
+            <view wx:for="{{images}}"  wx:key="*this" style='transform:translateX({{-index*15}}rpx)'>
+             <image class='text' src='{{item}}' mode='aspectFill'></image>
+            </view>
+            <text >...</text>
+        </view>
+    </view>
+</view>
+<view class="grid">
+      <!--hot news list-->
+    <view class="card " wx:for="{{everyfossilList}}" wx:key="id" wx:for-item="item" wx:if="{{item.isDelete}}">
+    <navigator url="/template/pages/everyonedetail/everyonedetail?id={{item.id}}">
+        <view class="chong2">
+            <view class="chong">
+                <image src="{{item.user.usericon}}" class="image" ></image>
+                <view class="info">
+                  <view><text class="username">{{ item.user.username }}</text></view>
+                  <view><text class="tag">发布于 {{ item.time }}</text></view>
+                </view>
+            </view>
+        </view>
+        <view class="title"><text> {{ item.content }}</text></view>
+        <view class="btn-area">
+          <view wx:for="{{item.picture}}" wx:for-item="item2" wx:key="*this" wx:for-index="i" wx:if="{{i<3}}" class="one_image">  
+              <view>
+                  <image src="{{item2}}" mode="widthFix" >
+                  </image>
+              </view>
+          </view>
+          <view class="more" wx:if="{{item.picture.length>=3}}">+1</view>
+        </view>
+        <view class="comment">
+          <image src='/static/comment.png' mode='aspectFill'></image>
+          <text>{{item.commentlength}}</text>
+        </view>
+      </navigator>
+    </view>
+</view> 
+

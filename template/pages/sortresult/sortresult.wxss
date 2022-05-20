@@ -1,0 +1,224 @@
+.container{
+    padding: 0rpx;
+    background-color: white;
+}
+
+.card{
+    width: 75%;
+    height: 1000rpx;
+    margin-top: 30rpx;
+    padding: 30rpx;
+    border: 35rpx solid #99CC99;
+    border-radius: 25rpx;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img{
+    width: 100%;
+    height: 350rpx;
+    border-radius: 25rpx;
+    overflow: hidden;
+}
+
+.boxone{
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .name{
+    background-color: #D1894E;
+    color: white;
+    padding: 10rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+    border-radius: 10rpx;
+    margin-right: 50rpx;
+  }
+  
+  .describ{
+    padding-left: 20rpx;
+  }
+
+  .lebals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200rpx;
+  }
+
+.box2{
+    margin-top: 30rpx;
+}
+
+  .detail{
+    font-size: 30rpx;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .btn-edit{
+      margin-top: 50rpx;
+      background-color: #D1894E;
+      color: white;
+      font-size: 26rpx;
+      width: 60rpx;
+      padding: 10rpx;
+      padding-left: 20rpx;
+      padding-right: 20rpx;
+      border-radius: 13rpx;
+      float: right; 
+  }
+
+  .btn-restruc{
+    margin-top: 30rpx;
+    background-color: #D1894E;
+    color: white;
+    font-size: 30rpx;
+  }
+
+  .foot{
+      margin-top: 30rpx;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10rpx;
+  }
+
+  .btn-pre{
+    background-color: #D1894E;
+    color: white;
+    
+  }
+
+  .btn-del{
+    background-color: rgb(255, 168, 97);
+    color: white;
+  }
+
+  /* 编辑项弹窗 */
+
+  .submit {
+    display: flex;
+    width: 160rpx;
+    background-color: #d4a876;
+    font-size: 30rpx;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(85, 52, 25);
+}
+
+.isRuleShow{
+    display: block;
+}
+.isRuleHide{
+    display: none;
+}
+.ruleZhezhao{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color:rgba(0, 0, 0, .5);
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.ruleZhezhaoContent{
+    padding: 20rpx 0;
+    width: 80%;
+    background: #e1d2b1;
+    margin: 40% auto;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    word-wrap: break-word;
+}
+.ruleZhezhaoText{
+    width: 80%;
+    font-size: 35rpx;
+    color: #856d5f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25rpx 0 25rpx 0;
+    word-wrap: break-word;
+}
+/* .ruleZhezhaoText text:nth-child(1){
+    color: #fff;
+    font-size: 40rpx;
+    height: 60rpx;
+    width: 60rpx;
+    background: #664a2c;
+    display: block;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    margin-right: 10rpx;
+} */
+.ruleZhezhaoText text:nth-child(1){
+    flex-wrap:wrap;
+    width: 100%;
+    word-wrap: break-word;
+}
+.ruleHide{
+    height: 60rpx!important;
+    width: 60rpx!important;
+    position: absolute;
+    top: -20rpx;
+    right: -20rpx;
+}
+.rule{
+    display: block;
+    border: 1px solid #fff;
+    width: 100rpx;
+    text-align: center;
+    line-height: 60rpx;
+    color: #fff;
+    height: 60rpx;
+    font-size: 30rpx;
+    border-radius: 30rpx;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+
+.sendrecesive{
+  padding-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+}
+
+.button{
+  background-color: #D1894E;
+  color: white;
+  font-size: 26rpx;
+  height: 65rpx;
+}
+
+.input{
+  border: 3rpx solid rgb(208, 208, 208);
+  padding: 10rpx;
+  border-radius: 15rpx;
+  background: white;
+}
+
+.box9{
+padding: 10rpx;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}

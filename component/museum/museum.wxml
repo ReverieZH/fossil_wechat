@@ -1,0 +1,13 @@
+<!--component/museum/museum.wxml-->
+
+<view class="fossillist">
+  <block wx:for="{{fossil}}" wx:key="id">
+    <view class="fossil-list">
+        <view class="fossil-list-info"  bindtap="handlePrevewImage" data-url="{{item.picture}}">
+          <image class="fossil-list-photo" src="{{item.picture}}" />
+          <text class="fossil-list-desc">{{item.name}}</text>
+        </view>
+    </view>
+  </block>
+</view>
+

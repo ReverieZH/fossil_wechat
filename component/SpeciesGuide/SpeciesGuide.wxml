@@ -1,0 +1,14 @@
+<!--component/SpeciesGuide/SpeciesGuide.wxml-->
+<view class="box">
+      <view class="title">物种分类</view>
+      <view class="location">
+        <view class="speciespicture"  wx:for="{{recieve_guideList}}" wx:key="id" >
+          <navigator url="/template/pages/speciesdetail/speciesdetail?fossilId={{item.id}}">
+            <view>
+              <image class="image" src="{{item.speciescover?item.speciescover:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" ></image>
+            </view>
+          </navigator>
+          <text class="text">{{item.speciesname}}</text>
+        </view>
+      </view>
+</view>

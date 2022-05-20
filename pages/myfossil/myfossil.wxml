@@ -1,0 +1,57 @@
+<!--pages/myfossil/myfossil.wxml-->
+<view class="mainFrame">
+  <swiper class="container" indicator-dots="{{indicatorDots}}" indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for = "{{myfossilList}}" wx:key="index" data-infor="{{item}}">
+      <swiper-item class="vol-swiper-item" bindtap="onItemClick">
+        <view class="deletbox">
+          <view class="deletebox2">
+            <view class="delete">
+              <image class="deleteimage" src="/static/delete.png" bindtap="delete" data-id="{{item.id}}"></image>
+            </view>
+          </view>
+        </view>
+        <view class="card">
+            <view class="top">
+              <view class="card-img">
+                <image class="img" src="{{item.fossil.picturepath}}" mode="aspectFill"></image>
+              </view> 
+                <view class="box">
+                    <view class="boxone">
+                    <view class="name">物种名称</view>
+                    <text class="describ">{{item.fossil.speciesname}}</text>
+                    </view>
+                    <view class="boxone">
+                    <view class="name">物种谱系</view>
+                    <text class="describ">{{item.fossil.specieslocation}}</text>
+                    </view>
+                    <view class="boxone">
+                    <view class="name">生存时期</view>
+                    <text class="describ">{{item.fossil.epoch}}</text>
+                    </view>
+                </view>
+                <view class="box2">
+                  <textview class="detail">{{item.fossil.document}}</textview>
+                  <view class="btn-edit" bindtap="getchange" data-id="{{item.id}}">编辑</view>
+                </view>
+            </view>
+            <navigator url="/template/pages/reconstruct/reconstruct?fossilId={{item.fossil.speciesId}}">
+              <button class="btn-restruc" style="width: 100%">三维重建结果</button>
+            </navigator>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="recesiveview" style='position:fixed;width:95%;bottom:1%'>
+  <view class="recesive" wx:if="{{isShowRecesive}}">
+    <view class="sendrecesive">
+        <textarea class="input" auto-focus placeholder="输入您的修改" value="{{change}}" bindinput="changeinput"></textarea>
+        <view class="box9">
+          <button class="button" bindtap="insertchange" style="width: 150rpx">修改</button>
+          <view class="cansle" bindtap="close">取消</view>
+        </view>
+    </view>
+  </view>
+</view>
+

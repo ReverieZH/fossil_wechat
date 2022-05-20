@@ -1,0 +1,197 @@
+/**everyonefossil.wxss**/
+.uppart{
+    height: 450rpx;
+    width: 100%;
+    border-bottom: 10rpx solid #D1894E;
+    display: flex;
+    flex-direction: column;
+}
+.my_publish{
+    position: absolute;
+    right: 20rpx;
+    top: 5rpx;
+}
+.my_publish image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.describe{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 200rpx;
+    margin: 0 50rpx;
+    border-bottom: 2rpx solid #ccc;
+}
+.up_title{
+    display: flex;
+    flex:2;
+    height: 200rpx;
+    color: #D1894E;
+    font-weight: 800;
+    font-size: 50rpx;
+    justify-content:center;
+    align-items: center;
+}
+.little_title{
+    flex:1;
+    font-size: 20rpx;
+}
+.little_title image{
+    width: 20rpx;
+    margin-left: 20rpx;
+}
+.button_view{
+    padding: 20rpx 0;
+}
+button{
+    background-color: #D1894E;
+    color: #fff;
+    font-size: 20rpx;
+    font-weight: 100;
+}
+.user_text{
+    margin-left: 40rpx;
+    font-weight: 700;
+    font-size: 30rpx;
+}
+.index {
+    width: 100%;
+    height: 100rpx;
+    position: relative;
+    display: flex;
+    flex-direction:columnl;
+    justify-content: flex-start;
+    margin-top: 10rpx;
+    padding:0 50rpx;
+    box-sizing: border-box;
+  }
+   
+  .index view .text {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: greenyellow;
+    border-radius: 50%;
+  }
+  view .text:first-of-type {
+    transform: translateX(0px);
+  }
+
+
+
+.card, #wordscard {
+    background: #fff;
+    margin: 20rpx 14px;
+    padding: 20px 32rpx;
+    border-radius: 2%;
+    box-shadow: 0 10rpx 10rpx rgb(209, 209, 209);
+}
+
+.chong{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.chong2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.chong image{
+  justify-content: flex-start;
+  height: 50rpx;
+  width: 50rpx;
+  padding-right: 20prx;
+}
+
+.chong2 image{
+  justify-content: flex-start;
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 90%;
+  padding-right: 20prx;
+}
+.info{
+  display: flex;
+  align-items: center;
+}
+.username {
+  font-weight: bold;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+}
+
+.tag {
+  display: flex;
+  justify-content: flex-end;  
+  font-weight: 200;
+  font-size: 20rpx;
+  padding-bottom: 10rpx;
+  padding-top: 10rpx;
+  margin-left: 20rpx;
+  color: #006621;
+}
+.title{
+  font-weight: 500;
+  font-size: 30rpx;
+  padding:20rpx 20rpx;
+}
+page, view {
+    font-family: arial,'pingfang sc',stheiti,"microsoft yahei",sans-serif
+}
+page {
+    background: white;
+}
+
+
+.btn-area{
+  height: 300rpx;
+  width: 100%;
+  /* border-radius: 5%; */
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.image_item{
+  flex:1
+}
+.one_image{
+  width: 100%;
+  height: 100%;
+  padding: 10rpx 10rpx;
+  flex:1;
+}
+.one_image image{
+  height: 300rpx;
+}
+.more{
+  z-index: 100;
+  height: 30rpx;
+  /* background-color: #fff; */
+  background:#000000; 
+  opacity:0.5;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10rpx;
+  color: #fff;
+}
+.comment{
+  height: 40rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.comment image{
+  height: 40rpx;
+  width: 40rpx;
+}
+.comment text{
+  font-size: 20rpx;
+  font-weight: 700;
+}
+
+

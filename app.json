@@ -1,0 +1,74 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/speciesguide/speciesguide",
+    "pages/myfossil/myfossil",
+    "pages/everyonefossil/everyonefossil",
+    "pages/mycollection/mycollection",
+    "pages/user/user"
+  ],
+  "subpackages": [
+      {
+          "root": "template",
+          "pages":[
+              "pages/photo/photo",
+              "pages/webview/webview",
+              "pages/reconstruct/reconstruct",
+              "pages/speciesdetail/speciesdetail",
+              "pages/sortresult/sortresult",
+              "pages/mycollection/mycollection",
+              "pages/publish/publish",
+              "pages/mypublish/mypublish",
+              "pages/everyonedetail/everyonedetail",
+              "pages/museum/museum"
+          ]
+      }
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D1894E",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#99CC66",
+    "borderStyle": "white",
+    "backgroundColor": "#D1894E",
+    "list": [
+      {
+        "pagePath": "pages/speciesguide/speciesguide",
+        "iconPath": "./static/discover_fill.png",
+        "selectedIconPath": "./static/discover_filled.png",
+        "text": "石在有趣"
+      },
+      {
+        "pagePath": "pages/myfossil/myfossil",
+        "iconPath": "./static/favor_fill.png",
+        "selectedIconPath": "./static/favor_filled.png",
+        "text": "我的化石"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/camera_fill.png",
+        "selectedIconPath": "./static/camera_filled.png",
+        "text": "发现化石"
+      },
+      {
+        "pagePath": "pages/everyonefossil/everyonefossil",
+        "iconPath": "./static/explore_fill.png",
+        "selectedIconPath": "./static/explore_filled.png",
+        "text": "石在有料"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "./static/people_fill.png",
+        "selectedIconPath": "./static/people_filled.png",
+        "text": "用户中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,37 @@
+.container{
+    padding: 0rpx;
+    background-color: white;
+}
+
+.card{
+    width: 75%;
+    height: 1000rpx;
+    margin-top: 30rpx;
+    padding: 30rpx;
+    border: 35rpx solid #99CC99;
+    border-radius: 25rpx;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn {
+    background-color: #D1894E;
+    color: #ffffff;
+    font-size: 30rpx;
+    font-weight: normal;
+    width: 550rpx;
+    height: 70rpx;
+}
+.result {
+    background-color: #999999;
+    border-radius: 25rpx;
+    margin-top: 40rpx;
+    width: 560rpx;
+    height: 100%;
+}
+
+.intro {
+    margin: 30px;
+    text-align: center;
+}

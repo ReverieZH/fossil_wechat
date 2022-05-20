@@ -1,0 +1,108 @@
+/* template/pages/publish/publish.wxss */
+.img{
+  width: 100%;
+  height:auto;
+  box-sizing: border-box;
+  padding: 0rpx 25rpx 55rpx;
+}
+.img_title{
+  margin-left: 36rpx;
+  font-size:28rpx;
+  font-weight:400;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.weui-uploader__bd {
+  overflow: hidden;
+}
+.weui-uploader__file {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  position: relative;
+}
+.weui-uploader__img {
+  display: block;
+  width: 79px;
+  height: 79px;
+}
+.weui-uploader__input-box {
+  float: left;
+  position: relative;
+  margin: 0rpx 14.5rpx 20rpx 14.5rpx;
+  width: 194rpx;
+  height: 194rpx;
+}
+.weui-uploader__input-box image{
+  width: 194rpx;
+  height: 194rpx;
+}
+.weui-uploader__input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.weui-uploader__input image{
+  width: 79px;
+  height: 79px;
+}
+.weui-uploader__files{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+.shanchu{
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  background-color: #ff0000;
+  position: absolute;
+  top: 5rpx;
+  z-index: 1;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 28rpx;
+  color: #fff;
+}
+.btn{
+  background-color: burlywood;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 40rpx;
+  font-weight: 900;
+  margin: 20rpx 20rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.uppart{
+  height: 600rpx;
+  background-color: #fff;
+  margin: 20rpx 20rpx;
+}
+.title{
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.input{
+  background-color:  rgb(241, 241, 241);
+  height: 70%;
+  margin: 15rpx 20rpx;
+}
+page{
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+}
+
+.weui-input{
+  height: 100%;
+  width: 100%;
+}

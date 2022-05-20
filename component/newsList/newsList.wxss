@@ -1,0 +1,31 @@
+.first_tab .news_item {
+  display: flex;
+  height: 300rpx;
+  border-top: 2rpx solid #d7d5d5;
+  padding: 20rpx 0;
+}
+.first_tab .news_item .describe {
+  flex: 3;
+  position: relative;
+  height: 100%;
+}
+.first_tab .news_item .describe .title {
+  color: burlywood;
+  font-weight: 900;
+  padding: 20rpx 20rpx;
+}
+.first_tab .news_item .describe .source {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20rpx 20rpx;
+  color: #ccc;
+}
+.first_tab .news_item .cover {
+  flex: 2;
+  padding: 20rpx;
+}
+.first_tab .news_item .cover .cover_img {
+  height: 100%;
+  width: 100%;
+}

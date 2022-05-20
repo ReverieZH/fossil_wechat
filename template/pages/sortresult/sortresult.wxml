@@ -1,0 +1,54 @@
+<view class="container">
+    <view class="card">
+        <view class="top">
+            <view class="card-img">
+                <image src="{{picture}}" mode="aspectFill"></image>
+            </view>
+            <view class="box">
+                <view class="boxone">
+                <view class="name">物种名称</view>
+                <text class="describ">{{name}}</text>
+                </view>
+                <view class="boxone">
+                <view class="name">物种谱系</view>
+                <text class="describ">{{location}}</text>
+                </view>
+                <view class="boxone">
+                <view class="name">生产时期</view>
+                <text class="describ">{{epoch}}</text>
+                </view>
+            </view>
+            <view class="box2">
+                <text class="detail">{{context}}</text>
+                <view class="btn-edit" bindtap="getchange">编辑</view>
+            </view>
+            <view class="ruleZhezhao {{isRuleTrue?'isRuleShow':'isRuleHide'}}">
+                <view class='ruleZhezhaoContent'>
+                    <textarea class='ruleZhezhaoText' value="{{context}}" bindinput="bindtxt">
+                    </textarea>
+                    <button class="submit" bindtap="submit">提交</button>
+                    <image src='../../static/exit.png' class='ruleHide' bindtap='exit'></image>
+                </view>
+            </view>
+        </view>
+        <button class="btn-restruc" style="width: 100%" bindtap="reconstruct">三维重建结果</button>
+    </view>
+    <view class="foot">
+        <button class="btn-pre" style="margin-right: 5rpx" bindtap="preserve">保存</button>
+        <button class="btn-del" style="margin-left: 5rpx" bindtap="delete">删除</button>
+    </view>
+</view>
+
+
+<view class="recesiveview" style='position:fixed;width:100%;bottom:1%'>
+  <view class="recesive" wx:if="{{isShowRecesive}}">
+    <view class="sendrecesive">
+        <textarea class="input" auto-focus placeholder="输入您的修改" value="{{change}}" bindinput="changeinput"></textarea>
+        <view class="box9">
+          <button class="button" bindtap="insertchange" style="width: 150rpx">修改</button>
+          <view class="cansle" bindtap="close">取消</view>
+        </view>
+    </view>
+  </view>
+</view>
+

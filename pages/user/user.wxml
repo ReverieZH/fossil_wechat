@@ -1,0 +1,76 @@
+
+<block wx:if="{{login}}">
+	<!-- logo -->
+	<view class="logo">
+		<image class="logo-img" src="/image/logo.png" mode="widthFix"></image>
+	</view>
+</block>
+
+<!-- 已经登录显示界面 -->
+<block wx:else>
+    	<view class="body" >
+		<!-- 头像昵称部分 -->
+    	  <view class='downpart'>
+      		<view class="top-bar">
+			<!-- 头像昵称 -->
+			<view class="user-img">
+				<view class="avatar-nickname">
+					<view class="avatar">
+						<image class="avatar-img" src="{{usericon}}"></image>
+					</view>
+					<view class="shownickname">
+						<text class="#">{{nickname}}</text>
+						<text class="icon-vip" style="margin-left:30rpx"></text>
+					</view>
+				</view>
+				<view class="kefu" bindtap="phoneLogin">
+        <!-- <text class="icon-service" >联系客服</text>   -->
+        <button  class="icon-service" open-type="contact" bindcontact="handleContact">联系客服</button>
+        </view>
+			</view>
+    </view>
+  </view>
+
+		<!-- 选项卡部分 -->
+    <view class='downpart'>
+      <view class='chiocebox'>
+        <view class="chioce">
+			    <!-- 选项卡item -->
+
+			<view class="choice-item" bindtap="openSwitch">
+				<view class="">
+
+					<text class="icon-tip text-gray"></text>
+					<text style="margin-left:20rpx">我的收藏</text>
+				</view>
+        <text class="icon-right text-gray"></text>
+			</view>
+      </view>
+    </view>
+
+      <!--推广软件-->
+      <view class="downpart">
+        <view class="box">
+          <text style="margin-left:35rpx">推广软件</text>
+          <view class="location">
+            <view class="speciespicture"  wx:for = "{{extension}}" wx:key="index" data-infor="{{item}}">
+							<navigator target="miniProgram" open-type="navigate" app-id="{{item.path}}" path="pages/index/index">
+               <image src="{{item.picture}}" style="height: 100rpx; width: 100rpx"></image>
+            	</navigator>
+						</view>
+          </view>
+        </view>
+         <view class="box">
+          <text style="margin-left:35rpx">学习平台</text>
+          <view class="location">
+            <view class="speciespicture"  wx:for = "{{study}}" wx:key="index" data-infor="{{item}}">
+						<navigator target="miniProgram" open-type="navigate" app-id="{{item.path}}" path="pages/index/index">
+             <image src="{{item.picture}}" style="height: 100rpx; width: 100rpx" ></image>
+            </navigator>
+						</view>
+          </view>
+        </view>
+      </view>
+		</view>
+	</view>
+</block>

@@ -1,0 +1,15 @@
+<!--text.wxml-->
+<view class="grid">
+
+<view class="card" wx:for="{{collectionList}}" wx:key="index" wx:for-index="itemIndex">
+    <view class="author">
+        <view class="image">
+          <image src="{{item.fossil.picturepath}}" mode="aspectFill"></image>
+        </view>
+        <view><text class="title">{{ item.fossil.speciesname }}</text></view>
+      </view>
+    <view><text class="tag">收藏于 {{item.time.time}}</text></view>
+</view>
+
+</view> 
+

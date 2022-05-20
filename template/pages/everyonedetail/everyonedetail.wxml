@@ -1,0 +1,72 @@
+<!--template/pages/everyonedetail/everyonedetail.wxml-->
+<view class="chong2">
+  <view class="chong">
+    <image src="{{userImg}}" class="image" ></image>
+    <view class="userinfo">
+      <view><text class="username">{{ userName }}</text></view>
+    </view>
+  </view>
+  <view class="edit" wx:if="{{edit}}" bindtap="editPublish" data-id="{{wantID}}">
+     <image src="/template/static/edit.png" />
+  </view>
+</view>
+<view class="index_swiper">
+    <!-- swiper 默认宽度和高度 100% * 150px -->
+    <!--  image标签默认宽高 320 *240-->
+      <swiper autoplay indicator-dots="{{true}}" circular="{{false}}" autoplay="{{false}}"
+        bindtap="handlePrevewImage"
+        bindchange='onSlideChangeEnd'
+        current="{{currentTab}}"
+        data-url="{{item}}">
+        <swiper-item wx:for="{{imageList}}" wx:key="*this" >
+            <image src="{{item}}"  mode="aspectFit"/>
+        </swiper-item>
+      </swiper>
+  </view>
+<view class="content">
+  <view style="white-space:nowrap">
+    <scroll-view scroll-x scroll-into-view="{{scrollLast}}" enhanced scroll-with-animation>
+      <view class="listContent2">
+        <view style="display: inline-block;" class="item2" wx:for="{{imageList}}"  
+        id="item{{index + 1}}" wx:key="*this">
+          <image bindtap="swichNav" data-index="{{index}}" class="userAvatar {{currentTab==index?'activate':''}}" src="{{item}}" mode="aspectFit"/>
+        </view>
+      </view> 
+    </scroll-view>
+  </view>
+</view>
+<view class="info">
+    {{content}}
+</view>
+
+<view class='reply'>
+  <view class='replyUser' wx:for="{{wantReplay}}" wx:key="id" bindtouchstart="touchstar">
+    <block wx:if="{{item.replyUser.replyUserId===userID}}">
+      <image class='userImg' src='{{item.user.usericon}}'></image>
+      <text class='userName' style='position: absolute; margin-left:20rpx;'>{{item.user.username}}</text>
+      <view class='reply_content' data-replyuserid='{{item.user.userid}}' data-replyname='{{item.user.username}}' bindtap='getReplyUserID'>{{item.content}}</view>
+      <view class='reply_time'>{{item.time}}</view>
+    </block>
+    <block wx:else>
+      <image class='userImg' src='{{item.user.usericon}}'></image>
+      <view class='huifu'>
+        <text class='userName'>{{item.user.username}}</text>
+        <text class='huifu_text'>回复@</text>
+        <text class='userName'>{{item.replyUser.replyUserName}}</text>
+      </view>
+      <view class='reply_content' data-replyuserid='{{item.user.userid}}' data-replyname='{{item.user.username}}' bindtap='getReplyUserID'>{{item.content}}</view>
+      <view class='reply_time'>{{item.time}}</view>
+    </block>
+  </view>
+</view>
+<view class='ask'>
+  <block wx:if="{{check}}">
+    <input class='input' type='text' placeholder='我来评论' bindinput='bindContentInp' value='{{contentInp}}' focus='{{focus}}'></input>
+    <button class='button' bindtap='addWant'>评论</button>
+  </block>
+  <block wx:else>
+    <input class='input' type='text' placeholder='回复@{{replyName}}' bindinput='bindReplyInp' value='{{replyInp}}' focus='{{focus}}'></input>
+    <button class='button' bindtap='addWant'>评论</button>
+  </block>
+</view>
+

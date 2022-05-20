@@ -1,0 +1,59 @@
+/* pages/speciesdetail/speciesdetail.wxss */
+.boxone{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name{
+  background-color: #D1894E;
+  color: white;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  border-radius: 10rpx;
+}
+
+.describ{
+  padding-left: 20rpx;
+}
+
+.lebals{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200rpx;
+}
+
+.partone{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+
+.detail{
+  font-size: 28rpx;
+  word-wrap: break-word;
+}
+
+.uppart{
+  padding: 40rpx;
+}
+.downpart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.picture{
+  width: 80%;
+  height: 500rpx;
+ 
+} 
+.picture image{
+  border-radius: 25rpx;
+}
+.image_view .boxone{
+  padding: 40rpx;
+}

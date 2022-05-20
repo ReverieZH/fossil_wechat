@@ -1,0 +1,31 @@
+<!--template/pages/publish/publish.wxml-->
+<form bindsubmit="bindFormSubmit">
+  <view class="uppart">
+  <view class="title">填写</view>
+  <view class="input">
+    <textarea  class="weui-input" maxlength="500" placeholder="最大输入长度为500" bindinput="bindTextAreaBlur" value="{{text}}"/>
+  </view>
+</view>
+<view class="img">
+		<view class="img_title">最多上传九张照片~~</view>
+		<view class="weui-uploader__bd">
+			<view class="weui-uploader__files">
+				<block wx:for="{{imageList}}" wx:for-item="image">
+					<view class="weui-uploader__file">
+						<image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+						<view class="shanchu" bindtap="delImg"  data-index="{{index}}">x</view>
+					</view>
+				</block>
+				<view class="weui-uploader__input-box">
+					<view class="weui-uploader__input" bindtap="chooseImage">
+						<image src="{{basicImg}}/template/static/upload.png"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+</view>
+<view class="btn main_bg white" bindtap='editPublished' form-type="submit" wx:if="{{edit}}">修改</view>
+<view class="btn main_bg white" bindtap='published' form-type="submit" wx:else>发表</view>
+</form>
+
+
